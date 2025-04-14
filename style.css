@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Carson';
+    src: url('Carson.woff2') format('woff2'),
+        url('Carson.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Carson';
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bigbox{
+    background-color: whitesmoke;
+    border-radius: 5%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20%;
+    border-color: #e4e4e4;
+    transition: 1s;
+}
+.box{
+    width: fit-content;
+    width: 80%;
+    background-color: whitesmoke;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    transition:1s;
+    position: relative;
+}
+.img{
+    display: flex;
+    float: left;
+    width: 125%;
+    border-radius: 5%;
+    overflow-x: hidden;
+    position: relative;
+}
+.text{
+    display: flex;
+    float: right;
+    position: relative;
+}
+.smallbox{
+    width: fit-content;
+    width: 80%;
+    height: fit-content;
+    background-color: whitesmoke;
+    display: flex;
+    border-radius: 5%;
+    font-size: 150%;
+    transition: 1s;
+}
+.bigbox:hover{
+    size: 150%;
+}
+.biggerbox:hover{
+    size: 150%;
+}
+.smallbox:hover{
+    size: 150%;
+}
+.text:hover{
+    size: 150%;
+}
+.img:hover{
+    size: 150%;
+}
+hr{
+    border-top: 5% solid e0e7ee;
+}
+.img2{
+    display: flex;
+    float: left;
+    width: 25%;
+    border-radius: 5%;
+    overflow-x: hidden;
+    position: relative;
+    height: 20%;
+}
